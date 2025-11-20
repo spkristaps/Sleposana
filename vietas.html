@@ -1,0 +1,147 @@
+<!-- <!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slēpošanas vietas Baltijā</title>
+    <link rel="stylesheet" href="style.css">
+
+   
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    
+    
+</head>
+
+<body>
+<header>
+    <h1>Slēpošanas vietas Latvijā</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Sākumlapa</a></li>
+            <li><a href="apgusana.html">Apgūšana</a></li>
+            <li><a href="inventars.html">Inventārs</a></li>
+            <li><a href="vietas.html" class="active">Slēpošanas vietas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Interaktīvā karte</h2>
+        <div id="map"></div>
+    </section>
+
+    <section>
+        <h2>Vietas ar aprakstiem</h2>
+
+        <div class="vieta">
+            <h3>NOSAUKUMS - VALSTS</h3>
+            <p>
+                PARAUGTEKSTS
+            </p>
+        </div>
+
+        <div class="vieta">
+            <h3>NOSAUKUMS - VALSTS</h3>
+            <p>
+                PARAUGTEKSTS
+            </p>
+        </div>
+
+        <div class="vieta">
+            <h3>NOSAUKUMS - VALSTS</h3>
+            <p>
+                PARAUGTEKSTS
+            </p>
+        </div>
+
+        <div class="vieta">
+            <h3>NOSAUKUMS - VALSTS</h3>
+            <p>
+                PARAUGTEKSTS
+            </p>
+        </div>
+
+        <div class="vieta">
+            <h3>NOSAUKUMS - VALSTS</h3>
+            <p>
+                PARAUGTEKSTS
+            </p>
+        </div>
+
+        <div class="vieta">
+            <h3>NOSAUKUMS - VALSTS</h3>
+            <p>
+                PARAUGTEKSTS
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p></p>
+</footer>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+
+var map = L.map('map').setView([57.0, 25.0], 6);
+
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+}).addTo(map);
+
+
+var locations = [
+    {
+        name: "Riekstukalns (LV)",
+        coords: [56.77502, 24.401669],
+        desc: "Trases: 14 trases (90m-350m) <br /> Augstums: 42m-47m  <br />Adrese: Baldones pagasts, Baldones novads"
+    },
+    {
+        name: "Lemberga hūte (LV)",
+        coords: [57.3748123, 21.5477196],
+        desc: "Trases: 6 trases (240 m)  <br /> Augstums: 50 m  <br /> Adrese: Saules iela 141, Ventspils"
+    },
+    {
+        name: "Reiņa trase (LV)",
+        coords: [57.1797, 24.8169],
+        desc: "Trases: 5 trases (100m-250m)<br />Augstums: 15m-35 m<br />Adrese: “Kalnzaķi”, Krimuldas novads"
+    },
+    {
+        name: "Siguldas trase (LV)",
+        coords: [57.1588435, 24.8361288],
+        desc: "Trases: 2 trases ( 350m-200 m)  <br /> Adrese: Peldu iela 1, Sigulda"
+    },
+    {
+        name: "Žagarkalns (LV)",
+        coords: [57.3007164, 25.2305811],
+        desc: "Trases: 13 trases (5 m-420 m)  <br /> Adrese: Cīrulīšu iela 70, Cēsis"
+    },
+    {
+        name: "Ozolkalns (LV)",
+        coords: [57.2944, 25.2222],
+        desc: "Trases: 4 trases (50-500 m)  <br /> Augstums: 80 m  <br /> Adrese: Drabešu pag., Amatas novads"
+    },
+    {
+        name: "Milzkalns (LV)",
+        coords: [57.001776, 23.207804],
+        desc: "Trases: 11 trases (320 m)  <br /> Augstums: 45 m <br /> Adrese: “Dižkalni”, Smārdes pagasts, Engures novads"
+    },
+    
+];
+
+// Pievieno marķierus
+locations.forEach(function(place) {
+    L.marker(place.coords)
+        .addTo(map)
+        .bindPopup("<b>" + place.name + "</b><br>" + place.desc);
+});
+</script>
+
+</body>
+</html>
+-->
