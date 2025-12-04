@@ -13,8 +13,11 @@
 </head>
 
 <body>
-<header>
-    <h1>Slēpošanas vietas Latvijā</h1>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h1>Slēpošanas vietas Latvijā</h1>
+        </div>
     <nav>
         <ul>
             <li><a href="index.html">Sākumlapa</a></li>
@@ -170,6 +173,8 @@ locations.forEach(function(place) {
         .bindPopup("<b>" + place.name + "</b><br>" + place.desc);
 });
 </script>
-
+<footer>
+    <p>© 2025 Slēpošana. Ķekavas vidusskolas skolēnu Projekta darbs.</p>
+</footer>
 </body>
 </html>
