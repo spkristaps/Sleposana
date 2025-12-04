@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
@@ -35,42 +35,42 @@
         <h2>Vietas ar aprakstiem</h2>
 
         <div class="vieta">
-            <h3>NOSAUKUMS - VALSTS</h3>
+            <h3>NOSAUKUMS</h3>
             <p>
                 PARAUGTEKSTS
             </p>
         </div>
 
         <div class="vieta">
-            <h3>NOSAUKUMS - VALSTS</h3>
+            <h3>NOSAUKUMS</h3>
             <p>
                 PARAUGTEKSTS
             </p>
         </div>
 
         <div class="vieta">
-            <h3>NOSAUKUMS - VALSTS</h3>
+            <h3>NOSAUKUMS</h3>
             <p>
                 PARAUGTEKSTS
             </p>
         </div>
 
         <div class="vieta">
-            <h3>NOSAUKUMS - VALSTS</h3>
+            <h3>NOSAUKUMS</h3>
             <p>
                 PARAUGTEKSTS
             </p>
         </div>
 
         <div class="vieta">
-            <h3>NOSAUKUMS - VALSTS</h3>
+            <h3>NOSAUKUMS</h3>
             <p>
                 PARAUGTEKSTS
             </p>
         </div>
 
         <div class="vieta">
-            <h3>NOSAUKUMS - VALSTS</h3>
+            <h3>NOSAUKUMS</h3>
             <p>
                 PARAUGTEKSTS
             </p>
@@ -94,7 +94,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
 
-
+//nosaka nosaukumu, vietu un aprakstu vietām uz kartes
 var locations = [
     {
         name: "Riekstukalns (LV)",
@@ -104,34 +104,63 @@ var locations = [
     {
         name: "Lemberga hūte (LV)",
         coords: [57.3748123, 21.5477196],
-        desc: "Trases: 6 trases (240 m)  <br /> Augstums: 50 m  <br /> Adrese: Saules iela 141, Ventspils"
+        desc: "Trases: 6 trases (240m)  <br /> Augstums: 50m  <br /> Adrese: Saules iela 141, Ventspils"
     },
     {
         name: "Reiņa trase (LV)",
         coords: [57.1797, 24.8169],
-        desc: "Trases: 5 trases (100m-250m)<br />Augstums: 15m-35 m<br />Adrese: “Kalnzaķi”, Krimuldas novads"
+        desc: "Trases: 5 trases (100m-250m)<br />Augstums: 15m-35m<br />Adrese: “Kalnzaķi”, Krimuldas novads"
     },
     {
         name: "Siguldas trase (LV)",
         coords: [57.1588435, 24.8361288],
-        desc: "Trases: 2 trases ( 350m-200 m)  <br /> Adrese: Peldu iela 1, Sigulda"
+        desc: "Trases: 2 trases (350m-200m)  <br /> Adrese: Peldu iela 1, Sigulda"
     },
     {
         name: "Žagarkalns (LV)",
         coords: [57.3007164, 25.2305811],
-        desc: "Trases: 13 trases (5 m-420 m)  <br /> Adrese: Cīrulīšu iela 70, Cēsis"
+        desc: "Trases: 13 trases (5m-420m)  <br /> Adrese: Cīrulīšu iela 70, Cēsis"
     },
     {
         name: "Ozolkalns (LV)",
         coords: [57.2944, 25.2222],
-        desc: "Trases: 4 trases (50-500 m)  <br /> Augstums: 80 m  <br /> Adrese: Drabešu pag., Amatas novads"
+        desc: "Trases: 4 trases (50m-500m)  <br /> Augstums: 80m  <br /> Adrese: Drabešu pagasts, Amatas novads"
     },
     {
         name: "Milzkalns (LV)",
         coords: [57.001776, 23.207804],
-        desc: "Trases: 11 trases (320 m)  <br /> Augstums: 45 m <br /> Adrese: “Dižkalni”, Smārdes pagasts, Engures novads"
+        desc: "Trases: 11 trases (320m)  <br /> Augstums: 45m <br /> Adrese: “Dižkalni”, Smārdes pagasts, Engures novads"
     },
-    
+    {
+        name: "Mežezers (LV)",
+        coords: [56.6599874,25.7134466],
+        desc: "Trases: 5 trases (200m-500m)  <br /> Augstums: 70m <br /> Adrese: „Mežezers”, Pļaviņu novads, Pļaviņas"
+    },
+    {
+        name: "Zviedru cepure (LV)",
+        coords: [57.023597,22.5910019],
+        desc: "Trases: 4 trases (220m-300m)  <br /> Augstums: 45m-50m <br /> Adrese: “Piltiņi”, Matkules pagasts, Kandavas novads"
+    },
+    {
+        name: "Egļukalns (LV)",
+        coords: [55.8741008,26.3287783],
+        desc: "Trases: 3 trases (110m-400m)  <br /> Augstums: 15m-40m <br /> Adrese: “Kalnāji”, Sventes pagasts, Daugavpils rajons"
+    },
+    {
+        name: "Viešūra kalns (LV)",
+        coords: [56.8815838,25.971097],
+        desc: "Trases: 5 trases (150m-400m)  <br /> Augstums: 50m <br /> Adrese: Kalna Dzīšļi, Vestienas pagasts, Madonas novads"
+    },
+    {
+        name: "Gaiziņš - Golgāts (LV)",
+        coords: [56.870194,25.949087],
+        desc: "Trases: 3 trases (310m-320m)  <br /> Augstums: 65m <br /> Adrese: Gaiziņkalns"
+    },
+    {
+        name: "Ķauķu kalns (LV)",
+        coords: [57.529844,26.9508538],
+        desc: "Trases: 2 trases (200m-400m)  <br /> Augstums: 239m <br /> Adrese: Ķauķu kalns, Ziemeru pagasts, Alūksne"
+    },
 ];
 
 // Pievieno marķierus
@@ -144,4 +173,3 @@ locations.forEach(function(place) {
 
 </body>
 </html>
--->
