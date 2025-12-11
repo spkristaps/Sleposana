@@ -170,3 +170,21 @@ footer {
     height: 65px;         /* logo izmērs */
     width: auto;
 }
+
+.attels {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.attels img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.attels-atsauce {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 6px;
+    font-style: italic;
+}
