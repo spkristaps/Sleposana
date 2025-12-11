@@ -1,2 +1,2 @@
-[Open My Website](https://spkristaps.github.io/Sleposana/)
+(https://spkristaps.github.io/Sleposana/)
 
