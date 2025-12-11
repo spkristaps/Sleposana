@@ -1,2 +1,3 @@
-https://github.com/spkristaps/Sleposana.git
+https://spkristaps.github.io/Sleposana/
+
 
