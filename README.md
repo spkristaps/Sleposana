@@ -1,1 +1,2 @@
-https://hugciksss.github.io/datorikaa/
+https://github.com/spkristaps/Sleposana.git
+
