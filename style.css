@@ -55,12 +55,13 @@ nav a {
     font-size: 0.95rem;
     
 }
-
+/* iezīmē navigāciju, kad pāriet ar pelīti */
 nav a:hover {
     background: #e0ecff;
     color: #145da0;
 }
 
+/*iezīmē navigāciju, kurā tu atrodies */
 nav a.active {
     background: #e0ecff;
     color: #145da0;
@@ -115,7 +116,7 @@ section ol li {
     border: 1px solid #d0d7e2;
 }
 
-/* vienkāršas kartītes katrai slēpošanas vietai */
+/* kartītes katrai slēpošanas vietai */
 .vieta {
     background: #ffffff;
     padding: 15px;

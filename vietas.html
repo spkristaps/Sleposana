@@ -122,7 +122,7 @@
         <div class="vieta">
             <h3>VIEŠŪRA KALNS</h3>
             <p>
-                Dabas ainavu ieskauts kalns ar vairākām trasēm un komfortablu infrastruktūru. 
+                Dabas ainavu ieskauts kalns ar vairākām trasēm un ērtu infrastruktūru. 
                 Ideāls brīvdienu atpūtas punkts.
             </p>
         </div>
@@ -161,7 +161,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
 
-//nosaka nosaukumu, vietu un aprakstu vietām uz kartes
+/*nosaka nosaukumu, vietu un aprakstu vietām uz kartes*/
 var locations = [
     {
         name: "Riekstukalns (LV)",
@@ -230,13 +230,15 @@ var locations = [
     },
 ];
 
-// Pievieno marķierus
+/* Pievieno marķierus*/
 locations.forEach(function(place) {
     L.marker(place.coords)
         .addTo(map)
         .bindPopup("<b>" + place.name + "</b><br>" + place.desc);
 });
 </script>
+
+
 <footer>
     <p>© 2025 Slēpošana. Ķekavas vidusskolas skolēnu Projekta darbs.
         <ul>
